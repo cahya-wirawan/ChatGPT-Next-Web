@@ -31,20 +31,20 @@ export const DEFAULT_CONFIG = {
 
   disablePromptHint: false,
 
-  dontShowMaskSplashScreen: false, // dont show splash screen when create chat
-  hideBuiltinMasks: false, // dont add builtin masks
+  dontShowMaskSplashScreen: true, // don't show splash screen when create chat
+  hideBuiltinMasks: true, // don't add builtin masks
 
   customModels: "",
   models: DEFAULT_MODELS as any as LLMModel[],
 
   modelConfig: {
-    model: "gpt-3.5-turbo" as ModelType,
-    temperature: 0.5,
-    top_p: 1,
+    model: "flores-1b5-4k-001" as ModelType,
+    temperature: 1.0,
+    top_p: 0.1,
     max_tokens: 2000,
-    presence_penalty: 0,
-    frequency_penalty: 0,
-    sendMemory: true,
+    presence_penalty: 0.5,
+    frequency_penalty: 0.5,
+    sendMemory: false,
     historyMessageCount: 4,
     compressMessageLengthThreshold: 1000,
     enableInjectSystemPrompts: true,

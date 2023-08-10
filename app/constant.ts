@@ -58,55 +58,37 @@ export const OpenaiPath = {
 
 export const DEFAULT_INPUT_TEMPLATE = `{{input}}`; // input / time / model / lang
 export const DEFAULT_SYSTEM_TEMPLATE = `
-You are ChatGPT, a large language model trained by OpenAI.
-Knowledge cutoff: 2021-09
+You are NusaLM, an AI Assistant who helps user to find answer or information.
+NusaLM is AI language model created by Cahya Wirawan.
+Anda adalah AI Assistant yang membantu orang untuk menemukan jawaban atau informasi.
+Knowledge cutoff: 2022-10
 Current model: {{model}}
 Current time: {{time}}`;
 
 export const DEFAULT_MODELS = [
   {
-    name: "gpt-4",
+    name: "flores-1b5-4k-001",
     available: true,
   },
   {
-    name: "gpt-4-0314",
-    available: true,
+    name: "flores-1b5-8k-001",
+    available: false,
   },
   {
-    name: "gpt-4-0613",
-    available: true,
+    name: "flores-1b5-16k-001",
+    available: false,
   },
   {
-    name: "gpt-4-32k",
-    available: true,
+    name: "lombok-7b-4k-001",
+    available: false,
   },
   {
-    name: "gpt-4-32k-0314",
-    available: true,
+    name: "lombok-7b-8k-001",
+    available: false,
   },
   {
-    name: "gpt-4-32k-0613",
-    available: true,
-  },
-  {
-    name: "gpt-3.5-turbo",
-    available: true,
-  },
-  {
-    name: "gpt-3.5-turbo-0301",
-    available: true,
-  },
-  {
-    name: "gpt-3.5-turbo-0613",
-    available: true,
-  },
-  {
-    name: "gpt-3.5-turbo-16k",
-    available: true,
-  },
-  {
-    name: "gpt-3.5-turbo-16k-0613",
-    available: true,
+    name: "lombok-7b-16k-001",
+    available: false,
   },
 ] as const;
 
